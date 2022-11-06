@@ -1,4 +1,4 @@
-//Metodo de Inserción
+//Metodo de InserciÃ³n
 // Algoritmo base del metodo
 
 #include<stdlib.h>
@@ -12,12 +12,12 @@ int main(){
 	int numeros[] = {4,5,3,2,1};
 	
 	for(i=0;i<5;i++){
-		pos = i;				//Indica en que posición se encuentra y lo recorrerá
-		aux = numeros[pos];		//Indica en que numero del arreglo se encuentra
+		pos = i;				//Indica en que posiciÃ³n se encuentra y lo recorrerÃ¡
+		aux = numeros[i];		//Indica en que numero del arreglo se encuentra
 		
 		while(pos>0 && numeros[pos-1]>aux){
 			numeros[pos] = numeros[pos-1];		//Intercambio de valores
-			pos--;								//	La posición va a ir disminuyendo
+			pos--;								//	La posiciÃ³n va a ir disminuyendo
 		}
 		numeros[pos] = aux;
 	}
